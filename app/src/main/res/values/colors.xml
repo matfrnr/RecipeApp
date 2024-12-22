@@ -1,0 +1,32 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorStar">#FFC107</color>
+
+    <!-- Couleurs de fond -->
+    <color name="light_background">#F5F5F5</color>
+    <color name="surface_color">#FFFFFF</color>
+
+    <!-- Couleurs de texte -->
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+
+    <!-- Couleurs des icônes -->
+    <color name="primary_color">#6200EE</color>
+    <color name="error_color">#B00020</color>
+
+    <!-- Effet de ripple -->
+    <color name="ripple_color">#1F000000</color>
+
+    <!-- Couleurs additionnelles pour le thème -->
+    <color name="divider_color">#1F000000</color>
+    <color name="disabled_color">#61000000</color>
+    <color name="card_stroke_color">#E0E0E0</color>
+
+    <!-- Couleurs spécifiques pour les types de régimes -->
+    <color name="vegetarian_color">#FFD700</color>
+</resources>

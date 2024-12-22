@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="difficulty_levels">
+        <item>Facile</item>
+        <item>Moyen</item>
+        <item>Difficile</item>
+    </string-array>
+
+    <string-array name="diet_types">
+        <item>Aucun régime spécial</item>
+        <item>Végétarien</item>
+        <item>Végan</item>
+        <item>Sans gluten</item>
+        <item>Sans lactose</item>
+    </string-array>
+
+</resources>

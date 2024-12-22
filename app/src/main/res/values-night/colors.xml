@@ -1,0 +1,28 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#BB86FC</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Couleurs de fond -->
+    <color name="light_background">#121212</color>
+    <color name="surface_color">#1E1E1E</color>
+
+    <!-- Couleurs de texte -->
+    <color name="primary_text">#FFFFFF</color>
+    <color name="secondary_text">#B3B3B3</color>
+
+    <!-- Couleurs des icônes -->
+    <color name="primary_color">#BB86FC</color>
+    <color name="error_color">#CF6679</color>
+
+    <!-- Effet de ripple -->
+    <color name="ripple_color">#33FFFFFF</color>
+
+    <!-- Couleurs additionnelles pour le thème -->
+    <color name="divider_color">#292929</color>
+    <color name="disabled_color">#4DFFFFFF</color>
+    <color name="card_stroke_color">#333333</color>
+</resources>

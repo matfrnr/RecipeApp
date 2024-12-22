@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/daily"
+        android:icon="@drawable/ic_home"
+        android:title="Aujourd'hui"/>
+
+    <item
+        android:id="@+id/recipes"
+        android:icon="@drawable/ic_list"
+        android:title="Recettes"/>
+
+    <item
+        android:id="@+id/community"
+        android:icon="@drawable/ic_community"
+        android:title="Communauté"/>
+
+    <item
+        android:id="@+id/suggestions"
+        android:icon="@drawable/ic_search"
+        android:title="Suggestions"/>
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account"
+        android:title="Compte"/>
+</menu>

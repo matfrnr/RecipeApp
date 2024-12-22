@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="Trier"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/sort_category"
+                android:title="Par catégorie"/>
+            <item
+                android:id="@+id/sort_alphabetical"
+                android:title="Par ordre alphabétique"/>
+            <item
+                android:id="@+id/sort_recipe"
+                android:title="Par recette"/>
+        </menu>
+    </item>
+</menu>

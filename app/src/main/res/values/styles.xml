@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="endIconMode">dropdown_menu</item>
+        <item name="boxBackgroundMode">outline</item>
+    </style>
+</resources>
