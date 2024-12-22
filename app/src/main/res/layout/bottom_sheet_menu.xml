@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/loginMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Connexion"
+        android:drawableStart="@drawable/ic_login"
+        android:drawablePadding="16dp"/>
+
+    <TextView
+        android:id="@+id/accountMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Mon compte"
+        android:drawableStart="@drawable/ic_account"
+        android:drawablePadding="16dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/favoritesMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Favoris"
+        android:drawableStart="@drawable/ic_favorite"
+        android:drawablePadding="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/settingsMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Paramètres"
+        android:drawableStart="@drawable/ic_settings"
+        android:drawablePadding="16dp"/>
+
+</LinearLayout>

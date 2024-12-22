@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ScrollView pour le contenu -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Profile Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"
+                        android:src="@drawable/ic_account"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                    <TextView
+                        android:id="@+id/usernameText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:layout_marginBottom="8dp" />
+
+                    <TextView
+                        android:id="@+id/emailText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:layout_marginBottom="16dp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Options Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/editProfileButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Modifier le profil"
+                        android:drawableStart="@drawable/ic_edit"
+                        android:drawablePadding="16dp"
+                        android:background="?attr/selectableItemBackground" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE" />
+
+                    <TextView
+                        android:id="@+id/myFavoritesButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Mes favoris"
+                        android:drawableStart="@drawable/ic_favorite"
+                        android:drawablePadding="16dp"
+                        android:background="?attr/selectableItemBackground" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE" />
+
+                    <!-- Bloc Mes Recettes -->
+                    <TextView
+                        android:id="@+id/myRecipesButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Mes recettes"
+                        android:drawableStart="@drawable/ic_recipe"
+                        android:drawablePadding="16dp"
+                        android:background="?attr/selectableItemBackground" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE" />
+
+                    <TextView
+                        android:id="@+id/changePasswordButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Changer le mot de passe"
+                        android:drawableStart="@drawable/ic_password"
+                        android:drawablePadding="16dp"
+                        android:background="?attr/selectableItemBackground" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Settings Section -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/themeButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:text="Paramètres"
+                        android:drawableStart="@drawable/ic_settings"
+                        android:drawablePadding="16dp"
+                        android:background="?attr/selectableItemBackground" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#EEEEEE" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/logoutButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Se déconnecter"
+                android:textColor="#FF0000"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

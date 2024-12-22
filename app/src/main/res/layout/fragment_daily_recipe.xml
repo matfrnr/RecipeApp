@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/randomRecipeButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginBottom="24dp">
+
+                <ImageView
+                    android:id="@+id/recipeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Image de la recette" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#80000000" />
+
+                <TextView
+                    android:id="@+id/recipeTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/recipeDescriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:textColor="?attr/colorOnBackground" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/cookingTimeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorOnBackground" />
+
+                <TextView
+                    android:id="@+id/difficultyText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorOnBackground" />
+
+                <TextView
+                    android:id="@+id/servingsText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorOnBackground" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Étapes de préparation"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="12dp"
+                android:textColor="?attr/colorOnBackground" />
+
+            <TextView
+                android:id="@+id/stepsText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6dp"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnBackground" />
+
+            <LinearLayout
+                android:id="@+id/ratingContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.5"
+                    style="?android:attr/ratingBarStyle"
+                    android:progressTint="@color/colorStar"
+                    />
+
+                <TextView
+                    android:id="@+id/ratingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:textColor="?attr/colorOnBackground" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/randomRecipeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_blue_button"
+        android:backgroundTint="?attr/colorPrimary"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="12dp"
+        android:text="Nouvelle recette"
+        android:textColor="?attr/colorOnPrimary" />
+
+</RelativeLayout>

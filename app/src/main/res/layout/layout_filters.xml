@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtres"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Difficulté"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/difficultyGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/filterAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tous"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/filterEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facile"/>
+
+        <RadioButton
+            android:id="@+id/filterMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moyen"/>
+
+        <RadioButton
+            android:id="@+id/filterHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Difficile"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temps de préparation"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/timeFilterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temps maximum : 180 min"
+        android:layout_marginBottom="8dp"/>
+
+    <SeekBar
+        android:id="@+id/timeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="180"/>
+
+    <Button
+        android:id="@+id/applyFiltersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Appliquer les filtres"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

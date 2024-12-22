@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Conteneur principal pour tous les enfants -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/recipeImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_recipe_image" />
+
+            <Button
+                android:id="@+id/addImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajouter une image"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/nameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nom de la recette"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/descriptionInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:minLines="3"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/stepsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Étapes de préparation"
+                android:minLines="5"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/cookingTimeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Temps de cuisson (en minutes)"
+                android:inputType="number"
+                android:layout_marginBottom="16dp" />
+
+            <Spinner
+                android:id="@+id/difficultySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/difficulty_levels" />
+
+            <EditText
+                android:id="@+id/servingsInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre de portions"
+                android:inputType="number"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Régime alimentaire"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <Spinner
+                android:id="@+id/dietTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allergènes présents"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint="Sélectionnez les allergènes">
+
+                <AutoCompleteTextView
+                    android:id="@+id/allergySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="none"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/selectedAllergensChipGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"/>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Créer la recette" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
